@@ -6,7 +6,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/customerdb
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: password
+    password: aidar
   jpa:
     hibernate:
       ddl-auto: update
