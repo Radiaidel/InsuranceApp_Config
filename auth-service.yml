@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authdb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+insurance:
+  app:
+    jwtSecret: fJmjxfjHHni+yKrEY5huFzbLGGkhWZyksdhglTu+cI68WL6MM9rl3Ab8jrRvrOPeCGRKp7+7xAzeqbV6VI8CLA==
+    jwtExpirationMs: 86400000
+
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
